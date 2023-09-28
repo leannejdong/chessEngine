@@ -42,3 +42,26 @@ Each class should have methods for movement validation and a way to track their 
 The game loop is a continuous loop keeps the game running and performs several essential tasks, such as
 
 1. Input handling
+2. Game state update
+3. AI
+4. Rendering
+5. Win/Loss conditions
+6. Time management
+
+   ```cpp
+   bool is GameOver = false;
+
+   while(!isGameOver){
+     // Handle player input
+     // Update game state
+     // Rander the game
+     // Check for win/loss conditions
+     // Update timers (if necessary)
+     // Example exit condition
+     if (playerInout == 'quit" || gameIsOver) {
+               isGameOver = true;
+     }
+   }
+   ```
+
+   In the context of a chess game, the game loop would repeatedly take input from players, check for conditions like checkmate or stalemate and render the updated board until the game reaches it conclusion.
